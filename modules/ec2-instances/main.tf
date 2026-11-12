@@ -44,7 +44,7 @@ resource "aws_instance" "prod_instances" {
   }
 
   lifecycle {
-    prevent_destroy = false
+    prevent_destroy = true
   }
 
 }
