@@ -1,0 +1,13 @@
+output "instance_info_non_prod" {
+  value = [ aws_instance.non_prod.id,
+            aws_instance.non_prod.tags["Name"],
+            aws_instance.non_prod.public_ip,
+            aws_instance.non_prod.private_ip  ]
+}
+
+output "instance_name" {
+  value = aws_instance.this.tags["Name"]
+}
+
+
+
